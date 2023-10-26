@@ -150,4 +150,15 @@ class CalculatorTest {
 
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    @DisplayName("Divide Negative Double by Positive Decimal")
+    public void divide_NegativeDouble_23_and_half_results() {
+        double num1 = -23;
+        double num2 = 0.5;
+        double expectedResult = -46;
+
+        double actualResult = Calculator.divide(num1, num2);
+        assertEquals(expectedResult, actualResult);
+    }
 }
